@@ -7,19 +7,25 @@ class ClassComponent extends React.Component{
         super(props); // async function which invokes parent constructor;
 
         this.state = {
-            count: 1
+            count: 1,
+            showName: true
         };
     }
     componentDidMount(){
         setTimeout( ()=>{
             this.setState({
-                count: 6
+                showName: false
             })
-        }, 3000 );
+        }, 10000 );
     }
 
     render(){
-        return <div> Class component | Fees - {this.props.fees} <br/> <HelloWorld name={ this.state.count}/> </div>
+        return ( <div> Class component 
+                    <br/>
+                    Fees - {this.props.fees} 
+                    <br/> 
+                    <HelloWorld show={this.state.showName} name={ this.state.count}/> 
+                </div>)
     }
 }
 

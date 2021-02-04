@@ -4,7 +4,7 @@ import ClassComponent from './components/ClassComponent';
 function App() {
   return (
     <div className="App">
-      <HelloWorld/>
+      {/* <HelloWorld/> */}
       <ClassComponent fees="1000"/>
     </div>
   );

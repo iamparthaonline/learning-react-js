@@ -1,9 +1,11 @@
-import HelloWorld from './components/HelloWorld/index.js';
+import HelloWorld from './components/HelloWorld';
+import ClassComponent from './components/ClassComponent';
 
 function App() {
   return (
     <div className="App">
       <HelloWorld/>
+      <ClassComponent fees="1000"/>
     </div>
   );
 }

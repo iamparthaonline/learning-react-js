@@ -1,6 +1,6 @@
 const List = ( props ) => {
-    return (<ul>
-        {props.data.map( item => <li> {item} - {item.length} </li>) }
+    return (<ul className="list-group">
+        {props.data.map( item => <li className="list-group-item"> {item} - {item.length} </li>) }
     </ul>)
 }
 export default List;

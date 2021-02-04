@@ -1,6 +1,5 @@
 import HelloWorld from './components/HelloWorld';
 import ClassComponent from './components/ClassComponent';
-
 function App() {
   return (
     <div className="App">
